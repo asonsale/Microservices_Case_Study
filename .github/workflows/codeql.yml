@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         language:
-          - java-kotlin
+          - java
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
