@@ -42,10 +42,10 @@ jobs:
     # TODO: use Autobuild instead of ./gradlew after https://github.com/github/codeql-action/issues/1417 is fixed
     # - name: Autobuild
     #   uses: github/codeql-action/autobuild@v2
-    - name: Build Java
-      run: |
-          make bootstrap
-          make release
+    # - name: Build Java
+    #   run: |
+    #       make bootstrap
+    #       make release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
