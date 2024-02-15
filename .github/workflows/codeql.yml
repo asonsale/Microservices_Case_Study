@@ -37,7 +37,7 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
-        languages: ${{ matrix.language }}
+        languages: ${{ 'java' }}
 
     # TODO: use Autobuild instead of ./gradlew after https://github.com/github/codeql-action/issues/1417 is fixed
     # - name: Autobuild
@@ -46,4 +46,4 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
       with:
-        category: "/language:${{matrix.language}}"
+        category: "/language:${{'java'}"
