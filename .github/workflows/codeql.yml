@@ -44,4 +44,4 @@ jobs:
     #   uses: github/codeql-action/autobuild@v3
 
     - name: Perform CodeQL Analysis
-      uses: actions/reusable-workflows/.github/workflows/codeql-analysis.yml@main
+      uses: github/codeql-action/autobuild@v3
